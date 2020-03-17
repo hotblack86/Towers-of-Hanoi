@@ -1,6 +1,11 @@
 class Hanoi
 
   def move(f,t)
-    return "Move disc from #{f} to #{t}!"
+    puts "Move disc from #{f} to #{t}!"
+  end
+
+  def move_via(f,v,t)
+    move(f,v)
+    move(v,t)
   end
 end
