@@ -8,4 +8,14 @@ class Hanoi
     move(f,v)
     move(v,t)
   end
+
+  def solver(n,f,h,t)
+    return nil if n == 0
+  end
+
+  # solver args:
+    # n = number of disks
+    # f = 'from' position
+    # h = 'helper' position
+    # t = 'to' position
 end
