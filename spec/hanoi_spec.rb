@@ -19,9 +19,12 @@ RSpec.describe Hanoi do
     expect(hanoi.solver(0,'A','B','C')).to eq(nil)
   end
 
-  it '#solver Provides Instructs for 2 disks' do
+  it '#solver Provides Instructs for 3 disks' do
     expect do
-      Hanoi.new.solver(2,'A','B','C')
-    end.to output("Move disc from A to B!\nMove disc from A to C!\nMove disc from B to C!\n").to_stdout
+      Hanoi.new.solver(3,'A','B','C')
+    end.to output(
+      "Move disc from A to C!\nMove disc from A to B!\nMove disc from C to B!\nMove disc from A to C!\nMove disc from B to A!\nMove disc from B to C!\nMove disc from A to C!\n"
+    ).to_stdout
   end
+
 end
