@@ -13,7 +13,8 @@ The objective of the puzzle is to move the entire stack to another rod, obeying 
 
 - No larger disk may be placed on top of a smaller disk.
 ---
-
+This program will output the instructions to solve the game to the console. Feel free to follow them IRL to test it out.
+---
 -Usage
 ```ruby main.rb```
 
