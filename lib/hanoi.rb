@@ -4,11 +4,6 @@ class Hanoi
     puts "Move disc from #{f} to #{t}!"
   end
 
-  def move_via(f,v,t)
-    move(f,v)
-    move(v,t)
-  end
-
   def solver(n,f,h,t)
     return nil if n == 0
     solver(n-1,f,t,h)
